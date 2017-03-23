@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+ <html lang="en" >
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+        <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+        <link rel ="stylesheet" type="text/css"href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="css/hover.css" rel="stylesheet" media="all" />
+        <!-- Start WOWSlider.com HEAD section -->
+        <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+        <script type="text/javascript" src="engine1/jquery.js"></script>
+        <!-- End WOWSlider.com HEAD section -->
+
+    </head>
+    <body>
+            <!-----Load SDK Facebook------>
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8&appId=2024973137644095&appId=603551963181572";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+            </script>
+
+    <header>
+        <div class="container">
+            <div class="row banner_gioithieu" >
+                <div class="col-md-4 col-xs-12 col-sm-4 col-lg-4">
+                <div class="banner">
+                        <img src="img/logo_4.png" class="img-responsive">
+                    </div>
+            </div>
+            <div class="col-md-4 col-xs-12 col-sm-4 col-lg-4">
+                <div class="row banner_gioithieu1">
+                    <img src="img/img1.png" class="img-responsive">
+                </div>
+                <div class="row">
+                    <form id="timkiem" class="form-inline">
+                        <input style="width:250px;margin-top:26px;"type="text" name="search"  placeholder="Nhập vào tên sp"/>
+                        <button type="submit" class="btn btn-default btn-sm btn_search">
+                        <span class="glyphicon glyphicon-search"></span> Search 
+                        </button>
+                    </form>             
+                    </div>
+                
+            </div>
+                <div class="col-md-4 col-xs-12 col-sm-4 col-lg-4" >
+                    <div class="row">                   
+                        <div class="banner11" id="banner11">
+                            <span class="span2">LÀNG NGHỀ LỤA CỔ TRUYỀN VẠN PHÚC</span><br>
+                            <span class="span3 ">www.SilkVietNam.vn</span><br>      
+                            <span style="color:#f94a13;"><i class="fa fa-whatsapp buzz" style="font-size:24px; "></i> :  0946076717 - 04331233444</span>
+                                <p style="color:#f94a13;"><i class="fa fa-envelope-o buzz" style="font-size:24px"></i> :  manhlinh1985@gmail.com</p>    
+                            <div class="icon_banner">
+                                <a href="#"><i class="fa fa-facebook face buzz" style="font-size:24px; margin-left:10px;color:#f94a13;"></i></a>
+                                <a href="#"><i class="fa fa-google face buzz" style="font-size:24px ; margin-left:10px;color:#f94a13;"></i></a>
+                                <a href="#"><i class="fa fa-youtube face buzz" style="font-size:24px ; margin-left:10px;color:#f94a13;"></i></a>
+                                <a href="#"><i class="fa fa-twitter face buzz" style="font-size:24px; margin-left:10px;color:#f94a13;"></i></a> 
+                                
+                            </div>                          
+                        </div>                      
+                    </div>
+                    
+                    
+                </div>
+            </div>
+       </div>
+    </header>
+
+<!---------------------Phần Navbar chính-------------------------->
+    <div class=" col-md-12 col-sm-12 col-xs-12 col-lg-12">
+                <nav class="navbar navbar-inverse"> 
+            <div class="container" >  
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse " id="myNavbar">
+      <ul class="nav nav-pills nav-justified">
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li ><a  href="gioithieu.html">Giới thiệu</a></li>
+        <li class="dropdown"><a href="sanpham.html">Sản Phẩm</a>
+            
+        </li>
+        <li><a href="dulich.html">Du Lịch</a></li>
+          <li><a href="tintuc.html">Tin Tức</a></li>
+          
+          <li><a href="lienhe.html">Liên hệ</a></li>
+          <li>
+            <a href="#" data-toggle="modal" data-target="#login-modal">Đăng nhập</a>
+
+                <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                        <div class="modal-dialog">
+                            <div class="loginmodal-container">
+                                <h1>Login to Your Account</h1><br>
+                                  <form>
+                                    <input type="text" name="user" placeholder="Username">
+                                    <input type="password" name="pass" placeholder="Password">
+                                    <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                                  </form>
+                            
+                                  <div class="login-help">
+                                    <a href="#">Register</a> - <a href="#">Forgot Password</a>
+                                  </div>
+                            </div>
+                        </div>
+                </div>    
+          </li>
+          <li><a href="dulich.html">Đăng kí</a></li>
+      </ul>
+      </div>
+  </div>  
+</nav>  
+    </div>
+            <br><br>
+<!---------------------kết thúc Phần Navbar chính-------------------------->
+<!---------------------Phần SLider-------------------------->
+<section>
+    <div class="container noidung" >
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+                <div id="myCarousel11" >
+                    <!-- Start WOWSlider.com BODY section -->
+                    <div id="wowslider-container1">
+                        <div class="ws_images"><ul>
+                            <li><a href="http://wowslider.net"><img src="data1/images/slideshow_1.png" alt="http://wowslider.net/" title="The La, lĩnh Bưởi, chồi Phùng<br>
+
+Lụa Vân Vạn Phúc, nhiễu vùng Mỗ bên" id="wows1_0"/></a></li>
+                            <li><img src="data1/images/slideshow_2.png" alt="slideshow_2" title="The La, lĩnh Bưởi, chồi Phùng<br>
+
+Lụa Vân Vạn Phúc, nhiễu vùng Mỗ bên" id="wows1_1"/></li>
+                        </ul></div>
+                        <div class="ws_bullets"><div>
+                            <a href="#" title="slideshow_1"><span><img src="data1/tooltips/slideshow_1.png" alt="slideshow_1"/>1</span></a>
+                            <a href="#" title="slideshow_2"><span><img src="data1/tooltips/slideshow_2.png" alt="slideshow_2"/>2</span></a>
+                        </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wow slider</a> by WOWSlider.com v8.7</div>
+                        <div class="ws_shadow"></div>
+                    </div>
+                    <script type="text/javascript" src="engine1/wowslider.js"></script>
+                    <script type="text/javascript" src="engine1/script.js"></script>
+                    <!-- End WOWSlider.com BODY section -->
+                </div>
+            </div>          
+        </div>
+    </div>
+</section>
+<!--------------------- kết thúc Phần SLider-------------------------->
+<!--------------------- Phần Bài viết và sản phẩm-------------------------->
+<section>
+    <div class="container">
+        <div class="row noidung1">
+            <div class="col-xs-12 col-md-3 col-lg-3 col-sm-3" >
+                <div class="row text-center">
+                    <h4 class="danhmuc">DANH MỤC SẢN PHẨM</h4>
+                    <hr>
+                </div>
+                    <ul class="myNav2" id="myNavbar2" >
+                        <li ><a href="#">LỤA VẠN PHÚC</a></li>
+                       <li><a href="#">TÚI LỤA</a></li>
+                        <li><a href="#">NÓN LỤA</a></li>
+                        <li><a href="#">SẢN PHẨM KHÁC</a></li>
+                    </ul>
+                    
+                    <div class="row video text-center" >
+                    <h5 style="color: blue;">VIDEO LIÊN QUAN</h5>
+                    <video width="264" height="222"  controls>
+                        <source src="Lụa Vạn Phúc Huyền Thoại Một Làng Nghề - [Du Lịch Văn Hóa Việt Nam].mp4" type="video/mp4">
+                        <source src="Lụa Vạn Phúc Huyền Thoại Một Làng Nghề - [Du Lịch Văn Hóa Việt Nam].ogg" type="video/ogg">
+                        
+                    </video>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-9 col-lg-9 col-sm-9 slideanim" >
+                 <div class="row text-center">
+                    <h4 class="danhmuc">SẢN PHẨM TIÊU BIỂU CỦA LÀNG NGHỀ</h4>
+                    <hr>
+                </div>
+                <nav class="navbar navbar-default hienthi">
+                <div class="container-fluid " >
+                    <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+
+                    </div>
+                <div class="collapse navbar-collapse" id="myNavbar1" >
+                    <ul class= "nav nav-pills nav-justified">
+                        <li ><a data-toggle="pill" href="#home">KHĂN LỤA VÀ VẢI</a></li>
+                        <li><a data-toggle ="pill" href="#menu1">NÓN LỤA</a></li>
+                        <li><a data-toggle ="pill" href="#menu2">SẢN PHẨM KHÁC</a></li>
+                    </ul>
+                </div>
+                </div>          
+            </nav>
+            <!---------------------->
+            
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade in active ">
+                    <a href="chitietsp.html">
+                        <div class="content11">
+                            <div class="thumbnail text-center float-shadow">
+                                <img src="img/img_6456_large.jpg" alt="baiviet1" style="width:100%" class="img-responsive anhsp1 ">
+                                <p>Khăn Lụa</p>
+                                <p>Giá:</p>
+                            </div>
+
+                        </div>
+                    </a>
+
+                        <div class="content11">
+                            <div class="thumbnail text-center pulse-shrink">
+                                <img src="img/img_6481_large.jpg" alt="baiviet1"  class="img-responsive">
+                                <p>Khăn Lụa</p>
+                                <p>Giá:</p>
+                            </div>
+                        </div>
+                        <div  class="content11">
+                            <div class="thumbnail text-center wobble-top">
+                                <img src="img/img_7003_large.png" alt="baiviet1"  class="img-responsive">
+                                <p>Khăn Lụa</p>
+                                <p>Giá:</p>
+                            </div>
+                        </div>
+                        <div class="content11">
+                            <div class="thumbnail text-center wobble-horizontal">
+                                <img src="img/img_6779_large.jpg" alt="baiviet1"  class="img-responsive">
+                                <p>Khăn Lụa</p>
+                                <p>Giá:</p>
+                            </div>
+                        </div>
+                        <div  class="content11">
+                            <div class="thumbnail text-center wobble-horizontal">
+                                <img src="img/khan1.jpg" alt="baiviet1"  class="img-responsive">
+                                <p>Khăn Lụa</p>
+                                <p>Giá:</p>
+                            </div>
+                        </div>
+                        <div class="content11">
+                            <div class="thumbnail text-center wobble-horizontal">
+                                <img src="img/khan2.jpg" alt="baiviet1"  class="img-responsive">
+                                <p>Khăn Lụa</p>
+                                <p>Giá:</p>
+                            </div>
+                        </div>
+                        <div  class="content11">
+                            <div class="thumbnail text-center wobble-horizontal">
+                                <img src="img/khan3.jpg" alt="baiviet1"  class="img-responsive">
+                                <p>Khăn Lụa</p>
+                                <p>Giá:</p>
+                            </div>
+                        </div>
+                        <div  class="content11">
+                            <div class="thumbnail text-center wobble-to-bottom-right">
+                                <img src="img/img_6481_large.jpg" alt="baiviet1"  class="img-responsive">
+                                <p>Khăn Lụa</p>
+                                <p>Giá:</p>
+                            </div>
+                        </div>
+                    <div  class="content11">
+                        <div class="thumbnail text-center wobble-horizontal">
+                            <img src="img/khan3.jpg" alt="baiviet1"  class="img-responsive">
+                            <p>Khăn Lụa</p>
+                            <p>Giá:</p>
+                        </div>
+                    </div>
+                    <div  class="content11">
+                        <div class="thumbnail text-center wobble-to-bottom-right">
+                            <img src="img/img_6481_large.jpg" alt="baiviet1"  class="img-responsive">
+                            <p>Khăn Lụa</p>
+                            <p>Giá:</p>
+                        </div>
+                    </div>
+                        <br><br>
+                    </div>
+                    
+                    <!-------------------------------->
+                    <div id="menu1" class="tab-pane fade">
+                         <div class="content11">
+                            <div class="thumbnail text-center outline-outward">
+                                <img src="img/non2.jpg" alt="baiviet1"  class="img-responsive">
+                                <p>Khăn Lụa</p>
+                                <p>Giá:</p>
+                            </div>
+                        </div>
+                        <div class="content11">
+                            <div class="thumbnail text-center outline-outward">
+                                <img src="img/non3.jpg" alt="baiviet1"  class="img-responsive">
+                                <p>Khăn Lụa</p>
+                                <p>Giá:</p>
+                            </div>
+                        </div>
+                        <div  class="content11">
+                            <div class="thumbnail text-center outline-outward">
+                                <img src="img/non4.jpg" alt="baiviet1"  class="img-responsive">
+                                <p>Khăn Lụa</p>
+                                <p>Giá:</p>
+                            </div>
+                        </div>
+                        <div  class="content11">
+                            <div class="thumbnail text-center outline-outward">
+                                <img src="img/non5.jpg" alt="baiviet1"  class="img-responsive">
+                                <p>Khăn Lụa</p>
+                                <p>Giá:</p>
+                            </div>
+
+                        </div>
+
+                        <div  class="content11">
+                            <div class="thumbnail text-center outline-outward">
+                                <img src="img/img_6832_large.png" alt="baiviet1"  class="img-responsive">
+                                <p>Khăn Lụa</p>
+                                <p>Giá:</p>
+                            </div>
+                        </div>
+                        <div  class="content11">
+                            <div class="thumbnail text-center outline-outward">
+                                <img src="img/img_6848_large.png" alt="baiviet1"  class="img-responsive">
+                                <p>Khăn Lụa</p>
+                                <p>Giá:</p>
+                            </div>
+                        </div>
+                        <div  class="content11">
+                            <div class="thumbnail text-center outline-outward">
+                                <img src="img/img_6770_large.png" alt="baiviet1"  class="img-responsive">
+                                <p>Khăn Lụa</p>
+                                <p>Giá:</p>
+                            </div>
+                        </div>
+                        <div  class="content11">
+                            <div class="thumbnail text-center outline-outward">
+                                <img src="img/img_6800_large.png" alt="baiviet1"  class="img-responsive">
+                                <p>Khăn Lụa</p>
+                                <p>Giá:</p>
+                            </div>
+
+                        </div>
+
+                        <div  class="content11">
+                            <div class="thumbnail text-center outline-outward">
+                                <img src="img/img_6770_large.png" alt="baiviet1"  class="img-responsive">
+                                <p>Khăn Lụa</p>
+                                <p>Giá:</p>
+                            </div>
+                        </div>
+                        <div  class="content11">
+                            <div class="thumbnail text-center outline-outward">
+                                <img src="img/img_6800_large.png" alt="baiviet1"  class="img-responsive">
+                                <p>Khăn Lụa</p>
+                                <p>Giá:</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!------------------------------>
+                    <div id="menu2" class="tab-pane fade">
+                         <div  class="content11">
+                            <div class="thumbnail text-center">
+                                <img src="img/ttt.jpg" alt="baiviet1"  class="img-responsive">
+                                <p>Khăn Lụa</p>
+                                <p>Giá:</p>
+                            </div>
+                        </div>
+                        <div  class="content11">
+                            <div class="thumbnail text-center">
+                                <img src="img/ttttt.jpg" alt="baiviet1"  class="img-responsive">
+                                <p>Khăn Lụa</p>
+                                <p>Giá:</p>
+                            </div>
+                        </div>
+                        <div class="content11">
+                            <div class="thumbnail text-center">
+                                <img src="img/tui2.jpg" alt="baiviet1"  class="img-responsive">
+                                <p>Khăn Lụa</p>
+                                <p>Giá:</p>
+                            </div>
+                        </div>
+                        <div  class="content11">
+                            <div class="thumbnail text-center">
+                                <img src="img/tui3.jpg" alt="baiviet1"  class="img-responsive">
+                                <p>Khăn Lụa</p>
+                                <p>Giá:</p>
+                            </div>
+
+                        </div>
+
+                        <div  class="content11">
+                            <div class="thumbnail text-center">
+                                <img src="img/ttt.jpg" alt="baiviet1"  class="img-responsive">
+                                <p>Khăn Lụa</p>
+                                <p>Giá:</p>
+                            </div>
+                        </div>
+                        <div  class="content11">
+                            <div class="thumbnail text-center">
+                                <img src="img/ttttt.jpg" alt="baiviet1"  class="img-responsive">
+                                <p>Khăn Lụa</p>
+                                <p>Giá:</p>
+                            </div>
+                        </div>
+                        <div  class="content11">
+                            <div class="thumbnail text-center">
+                                <img src="img/tui2.jpg" alt="baiviet1"  class="img-responsive">
+                                <p>Khăn Lụa</p>
+                                <p>Giá:</p>
+                            </div>
+                        </div>
+                        <div  class="content11">
+                            <div class="thumbnail text-center">
+                                <img src="img/tui3.jpg" alt="baiviet1"  class="img-responsive">
+                                <p>Khăn Lụa</p>
+                                <p>Giá:</p>
+                            </div>
+
+                        </div>
+                        <div  class="content11">
+                            <div class="thumbnail text-center">
+                                <img src="img/tui2.jpg" alt="baiviet1"  class="img-responsive">
+                                <p>Khăn Lụa</p>
+                                <p>Giá:</p>
+                            </div>
+                        </div>
+                        <div  class="content11">
+                            <div class="thumbnail text-center">
+                                <img src="img/tui3.jpg" alt="baiviet1"  class="img-responsive">
+                                <p>Khăn Lụa</p>
+                                <p>Giá:</p>
+                            </div>
+
+                        </div>
+                    </div>          
+            </div>
+            
+            
+            </div>
+        </div>
+        <hr>
+        <div class="col-xs-12 col-md-12 col-lg-12 col-sm-12 text-center">
+            <h4 style="color: blue;">BÀI VIẾT NỔI BẬT</h4>
+        </div>
+        <div class="row noidung2">
+            <div class="col-xs-12 col-md-3 col-lg-3 col-sm-3">
+                <div class="row">
+                    <ul class="myNav2" id="myNavbar22" >
+                    <li><a href="tintuc7.html">LÀNG LỤA HÀ ĐÔNG XƯA VÀ NAY</a></li>
+                    <li><a href="tintuc1.html">HÀ ĐÔNG TẬP TRUNG CHO DU LỊCH LÀNG LỤA VẠN PHÚC</a></li>
+                    <li><a href="tintuc2.html">LÀNG VẠN PHÚC KHAI TRƯƠNG THÊM  TRUNG TÂM LỤA</a></li>
+                    <li><a href="tintuc3.html">LÀNG LỤA VẠN PHÚC XÁC LẬP KỶ LỤC LÂU ĐỜI NHẤT</a>
+                    <li><a href="tintuc4.html">LÀNG VẠN PHÚC DIỄN RA "TUẦN VĂN HÓA QUÊ LỤA</a></li>
+                    <li><a href="tintuc5.html">LỤA VẠN PHÚC - GIAN NAN GÌN GIỮ GIÁ TRỊ</a></li>
+                    <li><a href="tintuc6.html">LÀNG LỤA VẠN PHÚC - ĐIỂM SÁNG DU LỊCH TRONG LÒNG THỦ ĐÔ</a>
+
+                </ul>
+                            <hr>
+                </div>
+                <!----------phần xem thêm-------------->
+                <div class="row">
+                    <div class="col-xs-12 col-md-12 col-lg-12 col-sm-12 text-center">
+                        <h5 style="color: blue;">BÀI VIẾT LIÊN QUAN</h5>
+                    </div>
+                    <a href="bailienquan1.html">
+                        <div class="row  slideanim grow">
+                            <div class="col-xs-6">
+                                <div class="thumbnail_small">
+                                    <div class="anh_small">
+                                        <img src="img/13_lua_van_phuc_td-10_21_49_562.jpg" alt="hinh bai viet 2" class="img-responsive">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="tieude6_small" >
+                                    <p style="color: blue;">CÁCH PHÂN BIỆT LỤA TƠ TẰM THỦ CÔNG THẬT VÀ GIẢ<p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                    <a href="bailienquan2.html">
+                    <div class="row slideanim grow">
+                        <div class="col-xs-6">
+                            <div class="thumbnail_small">
+                                <div class="anh_small">
+                                    <img src="img/9_lua_van_phuc_td-10_13_00_010.jpg" alt="hinh bai viet 2" class="img-responsive">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 ">
+                            <div class="tieude6_small" >
+                                <p style="color: blue;">Cận cảnh quy trình nhuộm lụa ở làng Vạn Phúc - Hà Đông<p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    </a>
+                    <a href="bailienquan3.html">
+                        <div class="row  slideanim grow">
+                            <div class="col-xs-6">
+                                <div class="thumbnail_small">
+                                    <div class="anh_small">
+                                        <img src="img/3_lua_van_phuc_td-10_11_44_351.jpg" alt="hinh bai viet 2" class="img-responsive">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="tieude6_small" >
+                                    <p style="color: blue;">Nhan nhản lụa Trung Quốc, Vạn Phúc loay hoay tìm cách “triệt”<p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+
+                        <a href="bailienquan4.html">
+                            <div class="row  slideanim grow">
+                                <div class="col-xs-6">
+                                    <div class="thumbnail_small">
+                                        <div class="anh_small">
+                                            <img src="img/imagesvi.jpg" alt="hinh bai viet 2" class="img-responsive">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="tieude6_small" >
+                                        <p style="color: blue;">Lụa Vạn Phúc tìm lối đi để 'giữ giá' trên thị trường<p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </a>
+
+
+                </div>
+                <!----------kết thúc phần xem thêm-------------->
+                
+    
+            </div>
+            <div class="col-xs-12 col-md-9 col-lg-9 col-sm-9">          
+                <div class="row slideanim ">
+                    <div class="col-md-12 border_content float-shadow">
+
+                            <div class="thumbnail6">
+
+                                <div class="anh6">
+                                    <a href="tintuc7.html">
+                                    <img src="img/9572076845_67399eb3f5_z.jpg" alt="hinh bai viet" class="img-responsive">
+                                    <h4 style="color: blue;text-indent: 40px;">LÀNG LỤA HÀ ĐÔNG XƯA VÀ NAY</h4>
+                                    </a>
+                                    <p style="text-indent:40px; ">Làng Vạn Phúc vốn có tên Vạn Bảo, do kị húy nhà Nguyễn nên đã đổi thành Vạn Phúc. Theo                                        truyền thuyết, cách đây khoảng hơn 1100 năm, bà A Lã Thị Nương là vợ của Cao Biền, thái thú Giao Chỉ, từng sống ở trang Vạn Bảo. Trong thời gian ở đây, bà đã dạy dân cách làm ăn và truyền nghề dệt lụa.[1] Sau khi mất, bà được phong làm thành hoàng làng.
+                                        Lụa Vạn Phúc được giới thiệu lần đầu ra quốc tế tại các hội chợ Marseille (1931)[cần dẫn nguồn] và Paris (1932), được người Pháp đánh giá là loại sản phẩm tinh xảo của vùng Đông Dương thuộc Pháp.[1] Từ 1958 đến 1988, sản phẩm lụa Vạn Phúc hầu hết được xuất sang các nước Đông Âu; từ 1990 xuất khẩu ra nhiều quốc gia trên thế giới, thu ngoại tệ về cho Việt Nam....</p>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="row dulich1">
+                    <h4 style="text-indent:40px; color: blue;">THÔNG TIN DU LỊCH</h4>
+                    <div class="col-xs-12 col-md-3 col-sm-3 col-lg-3 dulich">
+                        <div class="thumbnail_small_dulich grow">
+                            <div class="anh_small_dulich">
+                                <img src="img/45264012.jpg" alt="hinh bai viet 2" class="img-responsive">
+                            </div>
+                            <div>
+                                <p class="diadiem">Làng Lụa Vạn Phúc</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3 col-sm-3 col-lg-3 dulich">
+                        <div class="thumbnail_small_dulich grow">
+                            <div class="anh_small_dulich">
+                                <img src="img/13_lua_van_phuc_td-10_21_49_562.jpg" alt="hinh bai viet 2" class="img-responsive">
+                            </div>
+                            <div>
+                                <p class="diadiem">Tưng bừng lễ hội ...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-3 col-sm-3 col-lg-3 dulich">
+                        <div class="thumbnail_small_dulich grow">
+                            <div class="anh_small_dulich">
+                                <img src="img/2_lua_van_phuc_td-10_11_28_287.jpg" alt="hinh bai viet 2" class="img-responsive">
+                            </div>
+                            <div>
+                                <p class="diadiem">Du Lịch Hà đông</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-3 col-sm-3 col-lg-3 dulich">
+                        <div class="thumbnail_small_dulich grow">
+                            <div class="anh_small_dulich">
+                                <img src="img/ren.jpg" alt="hinh bai viet 2" class="img-responsive">
+                            </div>
+                            <div>
+                                <p class="diadiem">Du lịch Làng rèn</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3 col-sm-3 col-lg-3 dulich">
+                        <div class="thumbnail_small_dulich grow">
+                            <div class="anh_small_dulich">
+                                <img src="img/45264012.jpg" alt="hinh bai viet 2" class="img-responsive">
+                            </div>
+                            <div>
+                                <p class="diadiem">Du lịch Làng cổ ...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+            </div>
+
+        </div>
+
+
+        <div class="row noidung3">
+            <div class="col-xs-12 col-md-3 col-lg-3 col-sm-3">
+            <div class="row text-center">
+                <h5 style="color: blue;">THÔNG TIN QUẢNG CÁO</h5>
+            </div>
+                
+                
+                <div class="quangcao1">
+                        <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel1" data-slide-to="1"></li>
+                            </ol>
+                            <!--Wraper for slide-->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="img/baiviet1.jpg" alt="Hinh banner1" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>Lua Van phuc</h3>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/luavanphuc_10.png" alt="Hinh banner 2" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>Lua Van Phuc</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--left and right control-->
+                            <a class="left carousel-control" href="#myCarousel1" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel1" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <p style="margin-top: 20px;margin-left:20px;color:white;">Doanh nghiệp Sản xuất Lụa Vạn phúc</p>
+                    </div>
+                    <div class="quangcao2">
+
+                        <div>
+                            <img src="img/lua-ha-dong-1.jpg" alt="hinh bai viet 2" class="img-responsive">
+                        </div>
+                        <div>
+                            <p style="margin-left: 20px;margin-top: 20px;color:white;">Cơ sở sản xuất Lụa Thanh Huyền</p>
+                        </div>
+
+                    </div>
+                <div class="row slideanim">
+                    <div class="col-md-12">
+                        <div class="quangcao3">
+
+                            <div>
+                                <img src="img/van-phuc-silk-village_large.jpg" alt="hinh bai viet 2" class="img-responsive">
+                            </div>
+                            <div>
+                                <p style="margin-left: 20px;margin-top: 20px;color:white;">Doanh nghiệp tư nhân Hà Thành</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row slideanim">
+                    <div class="col-md-12">
+                        <div class="quangcao3">
+
+                            <div>
+                                <img src="img/11_lua_van_phuc_td-10_21_24_139.jpg" alt="hinh bai viet 2" class="img-responsive">
+                            </div>
+                            <div>
+                                <p style="margin-left: 20px;margin-top: 20px;color:white;">Cửa hàng giới thiệu sản phẩm </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row FanPage">
+                    <div class="fb-page" data-href="https://www.facebook.com/khanluavanphuc.silk/" data-tabs="timeline" data-width="250" data-height="220" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/khanluavanphuc.silk/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/khanluavanphuc.silk/">Khăn Lụa Vạn Phúc Hà Đông</a></blockquote></div>
+                </div>
+                <div class="row calendar slideanim">
+                    <script type="text/javascript" language="JavaScript" src="http://www.informatik.uni-leipzig.de/~duc/amlich/JavaScript/amlich-hnd.js"></script>
+                    <script language="JavaScript">
+                        <!--
+                        setOutputSize("small");
+                        document.writeln(printSelectedMonth());
+                        -->
+                    </script>
+                </div>
+
+
+
+            </div>
+            <div class="col-xs-12 col-md-9 col-lg-9 col-sm-9">
+                <div class="row baiviet0 slideanim float-shadow">
+                    <div class="col-md-6">
+                        <div class="tieude6" >
+                            <a href="tintuc1.html">
+                                <p style="color: blue; text-indent: 40px;">HÀ ĐÔNG TẬP TRUNG CHO DU LỊCH LÀNG LỤA VẠN PHÚC</p>
+                            </a>
+                            <p style="text-indent:40px;">Trong những năm qua, ngành Du lịch Hà Nội, Đảng bộ, chính quyền và nhân dân quận Hà Đông đã nhận thức tiềm năng, lợi thế về du lịch của địa phương để lãnh đạo, chỉ đạo tập trung đầu tư bằng nguồn lực của địa phương, vận động, tuyên truyền, thu hút mạnh mẽ sự tham gia của người dân, của các tổ chức, doanh nghiệp tập trung các nguồn lực để phát triển du lịch Hà Đông trở thành ngành kinh tế có đóng góp quan trọng của quận...</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="thumbnail7">
+                            <a href="tintuc1.html">
+                                <div class="anh7">
+                                    <img src="img/130580488.jpg" alt="hinh bai viet 2" class="img-responsive">
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+                        <div class="row baiviet1 slideanim float-shadow">
+                            <div class="col-md-6">
+                                <div class="tieude6" >
+                                    <a href="tintuc2.html">
+                                        <p style="color: blue; text-indent: 40px;" >LÀNG VẠN PHÚC KHAI TRƯƠNG THÊM  TRUNG TÂM LỤA<p>
+                                    </a>
+
+                                    <p style="text-indent:40px;">Sáng 2/3, làng lụa Vạn Phúc đã khai trương trung tâm giới thiệu sản phẩm lụa truyền thống chất lượng cao. Đồng chí Lưu Duy Dần, Chủ tịch Hiệp hội làng nghề Việt Nam và đồng chí Nguyễn Thị Liên, PBT Thường trực Quận ủy đã về dự.
+                                        Thực hiện Đề án 02-ĐA/QU ngày 28/12/2010 của Quận ủy về “Đẩy mạnh phát triển thương mại dịch vụ quận Hà Đông giai đoạn 2010 - 2015”, năm 2014, làng lụa Vạn Phúc phối hợp với Hội Người cao tuổi tiến hành đầu tư xây dựng Trung tâm kinh doanh sản phẩm lụa truyền thống từ nguồn vốn xã hội hóa gồm 2 dãy nhà và khu phụ trợ với tổng số 22 gian hàng...</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="thumbnail8">
+                                    <a href="tintuc2.html">
+                                        <div class="anh7">
+                                            <img src="img/55_lua_van_phuc_td-10_14_18_654.jpg" alt="hinh bai viet 2" class="img-responsive">
+
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+
+                    </div>
+                <div class="row slideanim">
+                    <div class="col-md-12 border_content" >
+                        <div class="row ">
+                            <div class="col-md-6 float-shadow baiviet3">
+                                <div class="thumbnail9">
+                                    <a href="tintuc5.html"><div class="anh7">
+                                        <img src="img/ANH.jpg" alt="hinh bai viet 2" class="img-responsive">
+
+                                    </div></a>
+
+                                    <div class="tieude7">
+                                        <a href="tintuc5.html">
+                                            <p style="color: blue;text-indent: 40px;">LỤA VẠN PHÚC - GIAN NAN GÌN GIỮ GIÁ TRỊ<p>
+                                        </a>
+
+                                        <p style="text-indent:40px;margin-left: 10px;">Làng lụa Hà Đông (hay làng lụa Vạn Phúc) có nghề dệt lụa tơ tằm đẹp nổi tiếng của Hà Nội từ hơn ngàn năm trước. Lụa ở đây từng được người Pháp ca ngợi là “Đệ nhất tinh xảo của Đông Dương”. Song, để giữ gìn được cái danh đệ nhất đó thì còn là một con đường gian nan của người làm lụa...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 float-shadow">
+                                <div class="thumbnail10">
+                                    <a href="tintuc6.html">
+                                        <div class="anh7">
+                                        <img src="img/3_lua_van_phuc_td-10_11_44_351.jpg" alt="hinh bai viet 2" class="img-responsive">
+                                    </div>
+                                    </a>
+
+                                    <div class="tieude7" >
+                                        <a href="tintuc6.html">
+                                            <p style="color: blue; text-indent: 40px;">LÀNG LỤA VẠN PHÚC - ĐIỂM SÁNG DU LỊCH TRONG LÒNG THỦ ĐÔ<p>
+                                        </a>
+
+                                        <p style="text-indent:40px; margin-left: 10px;"> Những năm gần đây, du lịch làng nghề gắn kết với bảo tồn và phát triển nghề truyền thống đang là một hướng đi phát huy hiệu quả. Bên cạnh những lợi ích về kinh tế, xã hội đem lại, hình thức du lịch này đang giúp bảo tồn, ph...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row slideanim">
+                    <div class="col-md-12 border_content" >
+                        <div class="row ">
+                            <div class="col-md-6 float-shadow">
+                                <div class="thumbnail111">
+                                    <a href="tintuc3.html">
+                                        <div class="anh7">
+                                            <img src="img/3873470864_55b243e6f2.jpg" alt="hinh bai viet 2" class="img-responsive">
+                                        </div>
+                                    </a>
+
+                                    <div class="tieude7">
+                                        <a href="tintuc3.html">
+                                            <p style="color: blue; text-indent: 40px;">LỤA VẠN PHÚC - XÁC LẬP KỶ LỤC LÂU ĐỜI NHẤT<p>
+                                        </a>
+
+                                        <p style="text-indent:40px;margin-left:10px;">Làng lụa Hà Đông (hay làng lụa Vạn Phúc) có nghề dệt lụa tơ tằm đẹp nổi tiếng của Hà Nội từ hơn ngàn năm trước. Lụa ở đây từng được người Pháp ca ngợi là “Đệ nhất tinh xảo của Đông Dương”. Song, để giữ gìn được cái danh đệ nhất đó thì còn là một con đường gian nan của người làm lụa...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 float-shadow">
+                                <div class="thumbnail12">
+                                    <a href="tintuc8.html">
+                                        <div class="anh7">
+                                            <img src="img/12.jpg" alt="hinh bai viet 2" class="img-responsive">
+                                        </div>
+                                    </a>
+
+                                    <div class="tieude7" >
+                                        <a href="tintuc8.html">
+                                            <p style="color: blue; text-indent: 40px;">QUY TRÌNH DỆT LỤA<p>
+                                        </a>
+
+                                        <p style="text-indent:40px; margin-left: 10px;font-weight: bold;"> Tằm là một loại sâu ăn lá, có lẽ nó cũng sẽ bị tiêu diệt như bao loài sâu ăn lá phá hoại mùa màng khác nếu như con người không phát hiện ra sự đặc biệt của chất mà nó nhả ra trong quá trình sinh trưởng và phát triển, đó chính là tơ, những sợi tơ trong suốt mỏng manh, nhưng lại ...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        
+        </div>
+
+        <!-----------------kết thúc nội dung 6--------------------->
+    </div>
+</section>
+<!--------------------- kết thúc Phần Bài viết và sản phẩm-------------------------->
+<br><br><br>
+<section>
+    <div class="container footer" >
+        <div class="col-md-4 col-xs-12 col-lg-4 col-sm-4">
+            <h3 style="color:#f94a13;">VỀ CHÚNG TÔI</h3>
+            <hr>
+            <div class="row">
+                <div class="col-md-12">
+                    <h5 style="color:#f94a13;">TRANG THÔNG TIN ĐIỆN TỬ GIỚI THIỆU LÀNG NGHỀ</h5>
+                    <p style="color:#f94a13;">Vạn Phúc - Hà Đông - Hà Nội</p>
+                    <p style="color:#f94a13;"><i class="fa fa-whatsapp" style="font-size:24px; "></i> :  0946076717 - 04331233444</p>
+                    <p style="color:#f94a13;"><i class="fa fa-envelope-o" style="font-size:24px"></i> :  manhlinh1985@gmail.com</p>
+                    <p style="color:#f94a13;"><i class="fa fa-internet-explorer" style="font-size:24px"></i> : langnghecotruyen.vn</p>
+                </div>
+                <!--<div class="row">
+                    Like and Share
+                 <div class="col-md-12">
+                        <div class="Share">
+                            <div class="fb-like Share_content" data-href="https://www.facebook.com/vai.lua.to.tam/" data-layout="standard"                                                                       data-action="like" data-size="small" data-show-faces="true" data-share="true">
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+
+            </div>
+
+
+        </div>
+        <div class="col-md-4 col-xs-12 col-lg-4 col-sm-4">
+            <h3 style="color:#f94a13;">THƯ VIỆN ẢNH</h3>
+            <hr>
+            <div class="row lib">
+                <div class="col-md-12">
+                    <div class="thumbnail11">
+                        <div class="lib_img">
+                            <img src="img/130581905.jpg" alt="hinh bai viet 2" class="img-responsive">
+                        </div>
+                    </div>
+                        <div class="thumbnail11">
+                        <div class="lib_img">
+                            <img src="img/11_lua_van_phuc_td-10_21_24_139.jpg" alt="hinh bai viet 2" class="img-responsive">
+                        </div>
+                        </div>
+                        <div class="thumbnail11">
+                        <div class="lib_img">
+                            <img src="img/baiviet1.jpg" alt="hinh bai viet 2" class="img-responsive">
+                        </div>
+                        </div>
+                        <div class="thumbnail11">
+                        <div class="lib_img">
+                            <img src="img/9_lua_van_phuc_td-10_13_00_010.jpg" alt="hinh bai viet 2" class="img-responsive">
+                        </div>
+                        </div>
+                </div>
+            </div>
+            <div class="row lib">
+                <div class="col-md-12">
+                    <div class="thumbnail11">
+                        <div class="lib_img">
+                            <img src="img/nang som.jpg" alt="hinh bai viet 2" class="img-responsive">
+                        </div>
+                    </div>
+                        <div class="thumbnail11">
+                        <div class="lib_img">
+                            <img src="img/45264012.jpg" alt="hinh bai viet 2" class="img-responsive">
+                        </div>
+                        </div>
+                        <div class="thumbnail11">
+                        <div class="lib_img">
+                            <img src="img/130580488.jpg" alt="hinh bai viet 2" class="img-responsive">
+                        </div>
+                        </div>
+                        <div class="thumbnail11">
+                        <div class="lib_img">
+                            <img src="img/3_lua_van_phuc_td-10_11_44_351.jpg" alt="hinh bai viet 2" class="img-responsive">
+                        </div>
+                        </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="col-md-4 col-xs-12 col-lg-4 col-sm-4 ">
+            <h3 style="color:#f94a13;">BẢN ĐỒ</h3>
+            <hr>
+
+            <div class="row">
+                
+                <div class="col-md-12 slideanim">
+                    <div id="googleMap" style="height:200px;width:100%;"></div>
+
+
+            <script src="http://maps.googleapis.com/maps/api/js"></script>
+            <script>
+
+                var myCenter = new google.maps.LatLng(20.98107521, 105.77642083);
+
+        function initialize() {
+                        var mapProp = {
+                            center:myCenter,
+                            zoom:12,
+                            scrollwheel:false,
+                            draggable:false,
+                            mapTypeId:google.maps.MapTypeId.ROADMAP
+                        };
+
+                var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+                var marker = new google.maps.Marker({
+                    position:myCenter,
+                });
+
+            marker.setMap(map);
+        }
+
+                google.maps.event.addDomListener(window, 'load', initialize);
+                </script>
+                </div>
+            </div>
+     
+        </div>
+        <div class="col-md-12  ">
+        <hr>
+                <div class="row">
+                    <div class="col-md-4">
+                        <i class="fa fa-facebook" style="font-size:24px; margin-left:10px;color:#f94a13;"></i>
+                        <i class="fa fa-google" style="font-size:24px ; margin-left:10px;color:#f94a13;"></i>
+                        <i class="fa fa-youtube" style="font-size:24px ; margin-left:10px;color:#f94a13;"></i>
+                        <i class="fa fa-twitter" style="font-size:24px; margin-left:10px;color:#f94a13;"></i>
+                    </div>
+
+                    <div class="col-md-4">
+                        <p style="color:#f94a13">Copyright &copy; 2017 By SilkVietNam.vn</p>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+
+
+
+
+    </div>
+
+
+</section>
+
+
+
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                $(".slideanim").each(function(){
+                    var pos = $(this).offset().top;
+                    var winTop = $(window).scrollTop();
+                    if(pos < winTop +400)
+                    {
+                        $(this).addClass("slide1");
+                    }
+                });
+            });
+        })
+    </script>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link rel ="stylesheet" type="text/css"href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/style_gioithieu.css">
+    <link rel="stylesheet" type="text/css" href="css/style_chitietSP.css">
+    <link rel="stylesheet" type="text/css" href="css/style_chitietdulich.css">
+	<link href="css/hover.css" rel="stylesheet" media="all" />
+    <script src="js/jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="css/jquery.bxslider.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<!------Load SDK Facebook------->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8&appId=2024973137644095$appId=603551963181572&appId=1288644474548418";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+</div>
+<header>
+	<div class="container">
+		<div class="row banner_gioithieu" >
+			<div class="col-md-4 col-xs-12 col-sm-4 col-lg-4">
+				<div class="banner">
+					<img src="img/logo_4.png" class="img-responsive">
+				</div>
+			</div>
+			<div class="col-md-4 col-xs-12 col-sm-4 col-lg-4">
+				<div class="row">
+					<img src="img/img1.png" class="img-responsive">
+				</div>
+				<div class="row">
+					<form id="timkiem">
+						<input style="width:250px;margin-top:26px;"type="text" name="search"  placeholder="Nhập vào tên sp"/>
+						<button type="submit" class="btn btn-default btn-sm btn_search">
+							<span class="glyphicon glyphicon-search"></span> Search
+						</button>
+					</form>
+				</div>
+
+			</div>
+			<div class="col-md-4 col-xs-12 col-sm-4 col-lg-4" >
+				<div class="row">
+					<div class="banner11" id="banner11">
+						<span class="span2">LÀNG NGHỀ LỤA CỔ TRUYỀN VẠN PHÚC</span><br>
+						<span class="span3 ">www.SilkVietNam.vn</span><br>
+						<span style="color:#f94a13;"><i class="fa fa-whatsapp buzz" style="font-size:24px; "></i> :  0946076717 - 04331233444</span>
+						<p style="color:#f94a13;"><i class="fa fa-envelope-o buzz" style="font-size:24px"></i> :  manhlinh1985@gmail.com</p>
+						<div class="icon_banner">
+							<a href="#"><i class="fa fa-facebook face buzz" style="font-size:24px; margin-left:10px;color:#f94a13;"></i></a>
+							<a href="#"><i class="fa fa-google face buzz" style="font-size:24px ; margin-left:10px;color:#f94a13;"></i></a>
+							<a href="#"><i class="fa fa-youtube face buzz" style="font-size:24px ; margin-left:10px;color:#f94a13;"></i></a>
+							<a href="#"><i class="fa fa-twitter face buzz" style="font-size:24px; margin-left:10px;color:#f94a13;"></i></a>
+
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+</header>
+
+<!---------------------Phần Navbar chính-------------------------->
+<div class=" col-md-12 col-sm-12 col-xs-12 col-lg-12">
+    <nav class="navbar navbar-inverse">
+        <div class="container" >
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse " id="myNavbar">
+                <ul class="nav nav-pills nav-justified">
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li ><a  href="gioithieu.html">Giới thiệu</a></li>
+                    <li class="dropdown"><a href="sanpham.html">Sản Phẩm</a>
+
+                    </li>
+                    <li><a href="dulich.html">Du Lịch</a></li>
+                    <li><a href="tintuc.html">Tin Tức</a></li>
+
+                    <li><a href="lienhe.html">Liên hệ</a></li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#login-modal">Đăng nhập</a>
+
+                        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                            <div class="modal-dialog">
+                                <div class="loginmodal-container">
+                                    <h1>Login to Your Account</h1><br>
+                                    <form>
+                                        <input type="text" name="user" placeholder="Username">
+                                        <input type="password" name="pass" placeholder="Password">
+                                        <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                                    </form>
+
+                                    <div class="login-help">
+                                        <a href="#">Register</a> - <a href="#">Forgot Password</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">Đăng kí</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<br>
+<br>
+<!---------------------kết thúc Phần Navbar chính-------------------------->
+<section>
+	<div class="container " >
+		<div class="row">
+
+			<div class="col-xs-12 col-md-12 col-lg-12 col-sm-12 gioithieu text-center">
+				<h4 style="color:#f94a13;margin-top: 6px;">TRANG CHI TIẾT TOUR DU LỊCH</h4>
+				<hr>
+			</div>
+		</div>
+	</div>
+
+</section>
+<!--------------------- Phần Bài viết và sản phẩm-------------------------->
+<section>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-lg-6 col-md-6">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="dulich.html">Du lịch</a></li>
+                <li>Chi tiết thông tin</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-lg-6 col-md-6">
+                    <div class="content_dulich">
+                        <div class="thumbnail_dulich float-shadow">
+                            <img src="img/130580488.jpg" alt="baiviet1" style="width:100%" class="img-responsive anhsp1 ">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-6 col-md-6" style="margin-top: -13px;">
+                    <div class="row">
+                        <h4 style="color: red;">LÀNG CỔ ĐƯỜNG LÂM - LỤA HÀ ĐÔNG</h4>
+                    </div>
+                    <div class="row">
+                        <ul>
+                            <li>Ngày khởi hành : Hàng ngày</li>
+                            <li>Thời gian: 1 ngày</li>
+                            <li>Địa điểm:  Làng cổ Đường Lâm, Làng lụa Vạn Phúc, Chùa Tây Phương, Đền thờ Thám hoa Giang Văn Minh, Đền thờ Phùng Hưng, Đền thờ Ngô Quyền, Đền Mông Phụ, Giếng Sữa Đường Lâm.</li>
+                            <li>Giá Tour: Liên hệ</li>
+                            <li>Hãy gọi điện cho chúng tôi để nhận được những ưu đãi tốt nhất!</li>
+                            <li>Hotline: 0946076717</li>
+                            <li>Email: manhlinh1985@gmail.com</li>
+                        </ul>
+                        <hr>
+                    </div>
+
+                    <div class="share">
+                        <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Chia sẻ</a></div>
+                    </div>
+                    <div class="like">
+                        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <p style="text-indent:20px; margin-top:20px;"> - Làng lụa Hà Đông hay chính là Làng lụa vạn phúc, nay thuộc phường Vạn Phúc, thuộc quận Hà Đông[/LINK], cách trung tâm Hà Nội khoảng 10km. Đây là một làng nghề dệt lụa tơ tằm đẹp nổi tiếng từ xa xưa, có nhiều mẫu hoa văn và lâu đời bậc nhất Việt Nam. Lụa Vạn Phúc từng được chọn may quốc phục dưới các đời vua nhà Nguyễn</p>
+            </div>
+            <hr>
+
+            <!--Tab menu cac thong tin cua chuyen di-->
+            <div class="row comment">
+                <div class="col-xs-12 col-sm-12 col-lg-12 col-md-12">
+                    <ul class="nav nav-pills" style="margin-top: -23px;">
+                        <li><a data-toggle="pill" href="#gioithieu">GIỚI THIỆU</a></li>
+                        <li class="active"><a data-toggle="pill" href="#home">LỊCH TRÌNH</a></li>
+                        <li><a data-toggle="pill" href="#menu1">GIÁ TOUR VÀ DỊCH VỤ</a></li>
+                        <li><a data-toggle="pill" href="#menu2">BÌNH LUẬN</a></li>
+                        <li><a data-toggle="pill" href="#menu3">ĐẶT TOUR</a></li>
+                        <li><a data-toggle="pill" href="#menu4">BẢN ĐỒ</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="home" class="tab-pane fade in active">
+                            <div class="row text-center">
+                                <p>LÀNG CỔ ĐƯỜNG LÂM – LÀNG LỤA VẠN PHÚC<p>
+                                <p>TÌM VỀ NHỮNG GIÁ TRỊ VĂN HÓA TRUYỀN THỐNG CỦA VIỆT NAM</p>
+                                <p>Tour 1 ngày</p>
+                            </div>
+                            <div class="row">
+                                <ul>
+                                    <li><b>08:00</b> Xe đón Quý khách tại điểm hẹn khởi hành tới điểm du lịch làng cổ Đường Lâm cách trung tâm Hà Nội  khoảng 60km.</li>
+                                    <li><b>09:30</b> Dừng chân tham quan làng điêu khắc Sơn Đồng – ngôi làng chuyên sản xuất và cung cấp tượng gỗ cho phần lớn các ngôi đền, chùa ở miền Bắc Việt Nam. Quý khách có thể lưu lại hình ảnh những nghệ nhân làng nghề với đôi bàn tay khéo léo của mình tạo ra những tác phẩm tượng gỗ với nhiều hình dạng và sắc thái khác nhau</li>
+                                    <li><b>10:30</b> Xe tới Đường Lâm. Quý khách tham quan đền Mông Phụ, thăm những ngôi nhà cổ trong làng và thưởng thức đặc sản địa phương (rượu gạo, bánh gạo).</li>
+                                    <li><b>11:00</b> Quý khách đạp xe dọc theo con đường làng, thả hồn trong không gian yên bình của làng quê Việt Nam và tới thăm những di tích lịch sử nổi tiếng như đền thờ Thám hoa Giang Văn Minh, đền thờ vua Ngô Quyền và Phùng Hưng.</li>
+                                    <li><b>11:30</b> Tiếp tục hành trình bằng xe đạp, Quý khách tham quan Giếng Sữa – còn gọi là giếng sữa thần Chuông Sa. Nước ở giếng không bao giờ cạn. Nước trong vắt quanh năm và có vị ngọt mát lành. Những cặp vợ chồng hiếm muộn thường tìm về Giếng Sữa. Uống dòng nước mát của giếng và lời cầu con của họ rất được ứng nghiệm.</li>
+                                    <li><b>12:30</b> Quý khách ăn trưa trong ngôi nhà cổ 400 năm tuổi.</li>
+                                    <li><b>13:30</b> Lên xe trở về Hà Nội.</li>
+                                    <li><b>14:15</b> Trên đường về các khách sạn Hà Nội, Quý khách ghé thăm chùa Tây Phương được xây dựng từ thế kỷ 17. Ngôi chùa này mang kiến trúc tiêu biểu của chùa cổ miền Bắc, nổi tiếng với 18 bức tượng La Hán.</li>
+                                    <li><b>16:00</b> Quý khách thăm Làng lụa Vạn Phúc – cái nôi của nghề dệt lụa thượng phẩm ở Việt Nam. Nghe giới thiệu về quy trình sản xuất lụa thăm chợ lụa Vạn Phúc</li>
+                                    <li><b>17:30</b> Xe đưa Quý khách về điểm hẹn ban đầu. Chia tay Quý khách và hẹn gặp lại trong những chuyến đi lần sau.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="menu4" class="tab-pane fade">
+                            <div class="row">
+                                <p>Bản đồ</p>
+                            </div>
+
+
+                        </div>
+
+                        <div id="gioithieu" class="tab-pane fade">
+                            <div class="row">
+                                <p style="text-indent:20px; margin-top: 10px;">
+                                    Nằm ở quận Hà Đông, Làng Vạn Phúc nổi tiếng với nghề dệt lụa gắn liền với câu ca dao "The La, lĩnh Bưởi, chổi Phùng - Lụa vân Vạn phúc, nhiễu vùng Mỗ bên". Nghề dệt lụa có từ xa xưa trên đất Việt Nam. Thế kỷ 15, lụa Việt Nam đã theo chân các thương gia lên tàu biển đi tới bè du khách xa gần bốn phương. Nghề dệt lụa ở Việt Nam có ở nhiều nơi, nhưng không thể không nói tới Vạn Phúc - một vùng dệt lụa thủ công lâu đời và lừng danh của Việt Nam.
+                                </p>
+                                <p style="text-indent:20px; margin-top: 10px;">
+                                    Về với Vạn Phúc hôm nay, mới đến đầu làng ta đã nghe thấy tiếng dệt lụa rộn ràng và bắt gặp một không khí nhộn nhịp, tấp nập của cửa hàng giới thiệu làng Vạn Phúc được đặt ngay đầu làng với những xấp vải nhiều màu sắc. Lụa Vạn Phúc bền đẹp, khoác tấm áo lên người sẽ thấy mềm mại và nhẹ nhàng. Cái nét đặc sắc và độc đáo ấy chính là nhờ vào đôi bàn tay khéo léo, điêu luyện, tinh đời của người dân Vạn Phúc.
+                                    Về với Làng Vạn Phúc, du khách được ghé thăm Phố lụa thật tươi vui, náo nhiệt và không những được trực tiếp chọn lựa những loại lụa yêu thích, du khách còn được tìm hiểu quy trình làm ra một tấm lụa. Đó chính là điểm hấp dẫn làm tăng lượng khách du lịch tới đây.
+                                </p>
+                            </div>
+                            <div class="row">
+                                <p style="text-indent:20px; margin-top: 10px;">Làng cổ Đường Lâm thuộc thị xã Sơn Tây, Hà Nội,  được ví như bảo tàng đá ong (loại đất sét màu đỏ hình thành từ đá bazan được tìm thấy
+                                    ở miền bắc Việt Nam) với những ngôi nhà cổ kính rêu phong 400 năm tuổi. Sau phố cổ Hội An và phố cổ Hà Nội thì làng cổ Đường Lâm cũng đã được công nhận là di tích quốc gia vào năm 2005.
+                                    Chuyến thăm làng cổ Đường Lâm cũng là hành trình tìm về với nguồn gốc văn hóa và truyền thống của Việt Nam. Đây cũng là dịp để Quý khách chiêm ngưỡng kiến trúc độc đáo của những ngôi nhà cổ, hoài niệm về một ngôi làng Việt Nam còn nguyên dáng dấp thuở ban sơ với những con hẻm nhỏ quanh co,
+                                    thăm đền thờ của hai vị vua sinh ra từ làng cổ Đường Lâm,
+                                    và trò chuyện với người dân địa phương trong chính ngôi nhà cổ của họ.</p>
+                            </div>
+                        </div>
+                        <div id="menu1" class="tab-pane fade">
+                            <h4>Giá trên bao gồm:</h4>
+                            <ul>
+                                <li>Xe du lịch 7, 16 hoặc 29 điều hòa  đời mới đưa đón theo chương trình</li>
+                                <li>Ăn các bữa theo chương trình tiêu chuẩn bữa chính 120.000Đ/bữa, bữa sáng 40.000Đ</li>
+                                <li>Hướng dẫn viên địa phương  Tiếng Việt nhiệt tình, giàu kinh nghệm, nhiệt tình, chu đáo.</li>
+                                <li>Vé thăm quan các tuyến điểm theo chương trình.</li>
+                                <li>Nước uống 02 chai/người/ngày.</li>
+                            </ul>
+                            <h4>Giá trên không bao gồm:</h4>
+                            <ul>
+                                <li>Đồ uống theo các bữa ăn</li>
+                                <li>Chi phí cá nhân ngoài chương trình như giặt là, điện thoại… Và các dịp lễ tết</li>
+                                <li>Bảo hiểm du lịch & thuế.</li>
+                            </ul>
+                            <p>Thuế VAT 10%, tiền tip cho HDV và lái xe</p>
+
+                        </div>
+
+
+                            <div id="menu2" class="tab-pane fade">
+                                <div class="col-sm-12">
+                                    <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="760" data-numposts="1"></div>
+                                </div>
+
+
+                        </div>
+                        <div id="menu3" class="tab-pane fade">
+                            <div class="row col-sm-12 text-center" style="margin-bottom:20px;">
+                                <h4>Đặt tour: Hà Nội - Làng Lụa Vạn phúc</h4>
+                            </div>
+
+
+                            <div class="form-group">
+                                <div class="row col-sm-12">
+                                    <div class="col-sm-6">
+                                        <p style="float:left; margin-top:10px;">Nhập vào Email:</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input style="margin-left:-120px;"type="email" class="form-control" id="email" placeholder="Enter email">
+
+                                    </div>
+                                </div>
+                                <div class="row col-sm-12">
+                                    <div class="col-sm-6">
+                                        <p style=" margin-top:10px;">Ngày khởi hành:</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input style="width:200px;margin-left:-120px;"type="text" class="form-control" id="text" placeholder="Ngày khởi hành">
+                                    </div>
+                                </div>
+                                <div class="row col-sm-12">
+                                    <div class="col-sm-6">
+                                        <p style="float:left; margin-top:10px;">Họ và tên:</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input style="width:200px;margin-left:-120px;"type="text" class="form-control" id="text1" placeholder="Nhập vào họ tên">
+                                    </div>
+                                </div>
+                                <div class="row col-sm-12">
+                                    <div class="col-sm-6">
+                                        <p style="float:left; margin-top:10px;">Địa chỉ liên hệ:</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input style="width:200px;margin-left:-120px;"type="text" class="form-control" id="text2" placeholder="Địa chỉ liên hệ">
+
+                                    </div>
+                                </div>
+                                <div class="row col-sm-12">
+                                    <div class="col-sm-6">
+                                        <p style="float:left; margin-top:10px;">Điện Thoại:</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input style="width:200px;margin-left:-120px;"type="text" class="form-control" id="text3" placeholder="Nhập vào số điện thoại">
+                                    </div>
+                                </div>
+                                <div class="row col-sm-12">
+                                    <div class="col-sm-6">
+                                        <p style="float:left; margin-top:10px;">Ghi chú thêm:</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <textarea style="margin-left:-120px;"class="form-control" rows="5" id="Ghichu"></textarea>
+
+                                    </div>
+                                </div>
+                                    <div class="col-sm-12 text-center" style="margin-top:10px;">
+                                        <button style="width:80px;"type="button" class="btn btn-primary">Gửi</button>
+                                        <button type="button" class="btn btn-danger">Làm Lại</button>
+                                    </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+         </div>
+        <div class="col-md-4">
+
+            <div class="row">
+                <h4 style="color:red; margin-left:93px;margin-top: -2px;">VIDEO GIỚI THIỆU </h4>
+                <div class="video_dulich">
+                    <video width="300" height="222"  controls>
+                        <source src="Lụa Vạn Phúc Huyền Thoại Một Làng Nghề - [Du Lịch Văn Hóa Việt Nam].mp4" type="video/mp4">
+                        <source src="Lụa Vạn Phúc Huyền Thoại Một Làng Nghề - [Du Lịch Văn Hóa Việt Nam].ogg" type="video/ogg">
+
+                    </video>
+                </div>
+            </div>
+            <div class="row text-center">
+                <h4 style="color:red;">ĐỊA ĐIỂM LIÊN QUAN</h4>
+            </div>
+            <div class="row  slideanim grow">
+                <div class="col-xs-6">
+                    <div class="thumbnail_small_dulich1">
+                        <div class="anh_small_dulich">
+                            <img src="img/45264012.jpg" alt="hinh bai viet 2" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="tieude6_small_dulich1" >
+                        <p style="color: blue;">Du lịch Làng cổ Đường Lâm<p>
+                    </div>
+                </div>
+            </div>
+            <div class="row  slideanim grow">
+                <div class="col-xs-6">
+                    <div class="thumbnail_small_dulich1">
+                        <div class="anh_small_dulich">
+                            <img src="img/2_lua_van_phuc_td-10_11_28_287.jpg" alt="hinh bai viet 2" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="tieude6_small_dulich1" >
+                        <p style="color: blue;">4 địa điểm không thể không ghé qua khi đến Hà Đông<p>
+                    </div>
+                </div>
+            </div>
+            <div class="row  slideanim grow">
+                <div class="col-xs-6">
+                    <div class="thumbnail_small_dulich1">
+                        <div class="anh_small_dulich">
+                            <img src="img/du-lich-lang-nghe.jpg" alt="hinh bai viet 2" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="tieude6_small_dulich1" >
+                        <p style="color: blue;">Thăm quan Làng rèn Đa Sỹ<p>
+                    </div>
+                </div>
+            </div>
+            <div class="row  slideanim grow">
+                <div class="col-xs-6">
+                    <div class="thumbnail_small_dulich1">
+                        <div class="anh_small_dulich">
+                            <img src="img/c.jpg" alt="hinh bai viet 2" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="tieude6_small_dulich1" >
+                        <p style="color: blue;">Tham quan Chùa Thầy - Hà Nội<p>
+                    </div>
+                </div>
+            </div>
+
+            <!---Mạng xã hội-->
+            <div class="row FanPage_dulich">
+                <div class="col-xs-12 col-sm-12 col-lg-12 col-md-12">
+                    <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="390" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</div>
+    
+</section>
+
+<!--------------------- kết thúc Phần Bài viết và sản phẩm-------------------------->
+<br><br><br>
+<section>
+	<div class="container footer" >
+		<div class="col-md-4 col-xs-12 col-lg-4 col-sm-4">
+			<h3 style="color:#f94a13;">VỀ CHÚNG TÔI</h3>
+			<hr>
+			<div class="row">
+				<div class="col-md-12">
+					<h5 style="color:#f94a13;">TRANG THÔNG TIN ĐIỆN TỬ GIỚI THIỆU LÀNG NGHỀ</h5>
+					<p style="color:#f94a13;">Vạn Phúc - Hà Đông - Hà Nội</p>
+					<p style="color:#f94a13;"><i class="fa fa-whatsapp" style="font-size:24px; "></i> :  0946076717 - 04331233444</p>
+					<p style="color:#f94a13;"><i class="fa fa-envelope-o" style="font-size:24px"></i> :  manhlinh1985@gmail.com</p>
+					<p style="color:#f94a13;"><i class="fa fa-internet-explorer" style="font-size:24px"></i> : langnghecotruyen.vn</p>
+				</div>
+
+                <!--<div class="row">
+
+                    <div class="col-md-12">
+                        <div class="Share">
+                            <div class="fb-like Share_content" data-href="https://www.facebook.com/vai.lua.to.tam/" data-layout="standard"                                                                       data-action="like" data-size="small" data-show-faces="true" data-share="true">
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+
+			</div>
+
+
+		</div>
+		<div class="col-md-4 col-xs-12 col-lg-4 col-sm-4">
+			<h3 style="color:#f94a13;">THƯ VIỆN ẢNH</h3>
+			<hr>
+			<div class="row lib">
+				<div class="col-md-12">
+					<div class="thumbnail11">
+						<div class="lib_img">
+							<img src="img/130581905.jpg" alt="hinh bai viet 2" class="img-responsive">
+						</div>
+					</div>
+					<div class="thumbnail11">
+						<div class="lib_img">
+							<img src="img/11_lua_van_phuc_td-10_21_24_139.jpg" alt="hinh bai viet 2" class="img-responsive">
+						</div>
+					</div>
+					<div class="thumbnail11">
+						<div class="lib_img">
+							<img src="img/baiviet1.jpg" alt="hinh bai viet 2" class="img-responsive">
+						</div>
+					</div>
+					<div class="thumbnail11">
+						<div class="lib_img">
+							<img src="img/9_lua_van_phuc_td-10_13_00_010.jpg" alt="hinh bai viet 2" class="img-responsive">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row lib">
+				<div class="col-md-12">
+					<div class="thumbnail11">
+						<div class="lib_img">
+							<img src="img/nang som.jpg" alt="hinh bai viet 2" class="img-responsive">
+						</div>
+					</div>
+					<div class="thumbnail11">
+						<div class="lib_img">
+							<img src="img/45264012.jpg" alt="hinh bai viet 2" class="img-responsive">
+						</div>
+					</div>
+					<div class="thumbnail11">
+						<div class="lib_img">
+							<img src="img/130580488.jpg" alt="hinh bai viet 2" class="img-responsive">
+						</div>
+					</div>
+					<div class="thumbnail11">
+						<div class="lib_img">
+							<img src="img/3_lua_van_phuc_td-10_11_44_351.jpg" alt="hinh bai viet 2" class="img-responsive">
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		<div class="col-md-4 col-xs-12 col-lg-4 col-sm-4 ">
+			<h3 style="color:#f94a13;">BẢN ĐỒ</h3>
+			<hr>
+
+			<div class="row">
+				<div class="col-md-12 slideanim">
+					<div id="googleMap" style="height:200px;width:100%;"></div>
+
+					<!-- Add Google Maps -->
+					<script src="http://maps.googleapis.com/maps/api/js"></script>
+					<script>
+
+                        var myCenter = new google.maps.LatLng(20.98107521, 105.77642083);
+
+                        function initialize() {
+                            var mapProp = {
+                                center:myCenter,
+                                zoom:12,
+                                scrollwheel:false,
+                                draggable:false,
+                                mapTypeId:google.maps.MapTypeId.ROADMAP
+                            };
+
+                            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+                            var marker = new google.maps.Marker({
+                                position:myCenter,
+                            });
+
+                            marker.setMap(map);
+                        }
+
+                        google.maps.event.addDomListener(window, 'load', initialize);
+					</script>
+				</div>
+			</div>
+
+		</div>
+		<div class="col-md-12  ">
+			<hr>
+			<div class="row">
+				<div class="col-md-4">
+					<i class="fa fa-facebook" style="font-size:24px; margin-left:10px;color:#f94a13;"></i>
+					<i class="fa fa-google" style="font-size:24px ; margin-left:10px;color:#f94a13;"></i>
+					<i class="fa fa-youtube" style="font-size:24px ; margin-left:10px;color:#f94a13;"></i>
+					<i class="fa fa-twitter" style="font-size:24px; margin-left:10px;color:#f94a13;"></i>
+				</div>
+
+				<div class="col-md-4">
+					<p style="color:#f94a13">Copyright &copy; 2017 By SilkVietNam.vn</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	</div>
+
+</section>
+<script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            $(".slideanim").each(function(){
+                var pos = $(this).offset().top;
+                var winTop = $(window).scrollTop();
+                if(pos < winTop +400)
+                {
+                    $(this).addClass("slide1");
+                }
+            });
+        });
+    })
+</script>
+
+
+    <!---nhúng chat cho web-->
+    <div class="chat">
+        <script type='text/javascript'>window._sbzq||function(e){e._sbzq=[];var t=e._sbzq;t.push(["_setAccount",60863]);var n=e.location.protocol=="https:"?"https:":"http:";var r=document.createElement("script");r.type="text/javascript";r.async=true;r.src=n+"//static.subiz.com/public/js/loader.js";var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)}(window);</script>
+    </div>
+</body>
+</html>
